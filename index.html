@@ -1,78 +1,179 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Портфолио графического дизайнера и иллюстратора Яны Пономаревой.">
-  <meta name="theme-color" content="#0b0b0b">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Портфолио Яны Пономаревой — графического дизайнера и иллюстратора. Визуальные системы, афиши, соцсети, мерч, иллюстрация и оформление культурных проектов.">
+  <meta name="theme-color" content="#0a0a0a">
   <title>Яна Пономарева — графический дизайнер</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="site-header" aria-label="Навигация по портфолио">
-    <a class="brand" href="#top">ЯНА ПОНОМАРЕВА</a>
-    <nav>
+  <header class="header">
+    <a class="logo" href="#top">ЯНА<br>ПОНОМАРЕВА</a>
+    <button class="menu-button" type="button" aria-expanded="false" aria-controls="menu">Меню</button>
+    <nav id="menu" class="nav">
       <a href="#about">О себе</a>
+      <a href="#skills">Навыки</a>
       <a href="#projects">Проекты</a>
       <a href="#contacts">Связь</a>
     </nav>
   </header>
 
-  <main id="top" class="portfolio">
-    <section class="portfolio-screen" aria-label="Обложка портфолио">
-      <img src="portfolio-01.jpg" alt="Обложка портфолио Яны Пономаревой" width="1456" height="1024">
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Графический дизайнер · иллюстратор</p>
+        <h1>Делаю визуальные системы, которые не выглядят как «ещё один шаблон».</h1>
+        <p class="hero-text">Создаю дизайн для культурных и коммерческих проектов: от айдентики и социальных сетей до афиш, печатной продукции, мерча и авторской графики.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">Смотреть проекты</a>
+          <a class="button" href="mailto:ponomarevaa.y49@gmail.com">Написать мне</a>
+        </div>
+      </div>
+      <button class="hero-art zoomable" data-image="assets/portfolio-01.jpg" aria-label="Открыть обложку портфолио">
+        <img src="assets/portfolio-01.jpg" alt="Авторская обложка портфолио Яны Пономаревой">
+      </button>
     </section>
 
-    <section id="about" class="portfolio-screen" aria-label="О себе">
-      <img src="portfolio-02.jpg" alt="Информация о дизайнере, образовании и инструментах" loading="lazy">
+    <section id="about" class="section about">
+      <div>
+        <p class="section-number">01</p>
+        <h2>О себе</h2>
+      </div>
+      <div class="about-copy">
+        <p class="lead">Я графический дизайнер с опытом создания визуальных коммуникаций для культурных и коммерческих проектов. В профессии с 2024 года.</p>
+        <p>Специализируюсь на дизайне для digital- и офлайн-среды: социальных сетях, печатной продукции, мерче, презентациях и концепциях проектов. В работе мне важно не просто сделать отдельный макет, а выстроить целостную визуальную систему.</p>
+        <p>Быстро генерирую идеи, легко адаптируюсь к новым задачам и умею работать в разных стилях. Художественный бэкграунд помогает точно чувствовать композицию, цвет и визуальный баланс.</p>
+        <div class="facts">
+          <div><span>2024</span><small>в профессии</small></div>
+          <div><span>7–10</span><small>единиц мерча в сериях</small></div>
+          <div><span>∞</span><small>идей до дедлайна</small></div>
+        </div>
+      </div>
     </section>
 
-    <section class="portfolio-screen" aria-label="Профессиональные навыки">
-      <img src="portfolio-03.jpg" alt="Профессиональные и гибкие навыки" loading="lazy">
+    <section id="skills" class="section">
+      <div class="section-heading">
+        <p class="section-number">02</p>
+        <h2>Что я умею</h2>
+      </div>
+      <div class="skills-grid">
+        <article><h3>Визуальные системы</h3><p>Концепции, шаблоны и единый язык коммуникации бренда.</p></article>
+        <article><h3>Социальные сети</h3><p>Посты, обложки, афиши, рубрикаторы и серии публикаций.</p></article>
+        <article><h3>Печатный дизайн</h3><p>Афиши, буклеты, стенды, бейджи и подготовка к производству.</p></article>
+        <article><h3>Мерч и сувениры</h3><p>Термосы, стикерпаки, наборы и музейная продукция.</p></article>
+        <article><h3>Иллюстрация</h3><p>Авторская графика, персонажи и визуальные метафоры.</p></article>
+        <article><h3>Контент</h3><p>Копирайтинг, презентации и сопровождение проекта от идеи до выпуска.</p></article>
+      </div>
+      <button class="wide-image zoomable" data-image="assets/portfolio-03.jpg">
+        <img src="assets/portfolio-03.jpg" alt="Карта профессиональных и гибких навыков">
+      </button>
     </section>
 
-    <section class="portfolio-screen" aria-label="Опыт работы">
-      <img src="portfolio-04.jpg" alt="Опыт работы в музее и на фрилансе" loading="lazy">
+    <section class="section experience">
+      <div class="section-heading">
+        <p class="section-number">03</p>
+        <h2>Опыт</h2>
+      </div>
+      <div class="timeline">
+        <article>
+          <p class="date">Январь 2025 — настоящее время</p>
+          <h3>Государственный исторический музей Южного Урала</h3>
+          <p>Графический дизайнер и специалист пресс-службы. Визуальные коммуникации для социальных сетей, выставок и мероприятий; афиши, печатная продукция, презентации, мерч и авторские иллюстрации.</p>
+        </article>
+        <article>
+          <p class="date">2024 — настоящее время</p>
+          <h3>Фриланс</h3>
+          <p>Коммерческие проекты по рекомендациям и через личные контакты: материалы для социальных сетей, печатная продукция и визуальные концепции под задачи клиентов.</p>
+        </article>
+      </div>
     </section>
 
-    <section class="portfolio-screen" aria-label="Ключевые достижения">
-      <img src="portfolio-05.jpg" alt="Ключевые профессиональные достижения" loading="lazy">
+    <section id="projects" class="section projects">
+      <div class="section-heading projects-heading">
+        <div>
+          <p class="section-number">04</p>
+          <h2>Избранные проекты</h2>
+        </div>
+        <p>Нажми на проект, чтобы рассмотреть детали.</p>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card">
+          <button class="project-image zoomable" data-image="assets/portfolio-06.jpg">
+            <img src="assets/portfolio-06.jpg" alt="Сувенирная продукция: термосы и иллюстрации">
+          </button>
+          <div><p class="tag">Мерч · иллюстрация</p><h3>Сувенирная продукция</h3><p>Серия термосов и наклеек с авторскими иллюстрациями достопримечательностей Южного Урала.</p></div>
+        </article>
+
+        <article class="project-card">
+          <button class="project-image zoomable" data-image="assets/portfolio-07.jpg">
+            <img src="assets/portfolio-07.jpg" alt="Румбокс и музейный стикерпак">
+          </button>
+          <div><p class="tag">Детский продукт · интерактив</p><h3>Румбокс и стикерпак</h3><p>Наборы наклеек, с помощью которых ребёнок собирает собственный интерьер русской избы.</p></div>
+        </article>
+
+        <article class="project-card">
+          <button class="project-image zoomable" data-image="assets/portfolio-08.jpg">
+            <img src="assets/portfolio-08.jpg" alt="Афиши и оформление социальных сетей">
+          </button>
+          <div><p class="tag">Digital · афиши</p><h3>Социальные сети и афиши</h3><p>Работы в разных визуальных направлениях: от коллажной рок-эстетики до музейных и семейных событий.</p></div>
+        </article>
+
+        <article class="project-card">
+          <button class="project-image zoomable" data-image="assets/portfolio-09.jpg">
+            <img src="assets/portfolio-09.jpg" alt="Фирменный стиль музейных сообществ">
+          </button>
+          <div><p class="tag">Айдентика · соцсети</p><h3>Фирменный стиль</h3><p>Ребрендинг музейных сообществ и создание системы, которая работает в разных форматах.</p></div>
+        </article>
+
+        <article class="project-card">
+          <button class="project-image zoomable" data-image="assets/portfolio-10.jpg">
+            <img src="assets/portfolio-10.jpg" alt="Оформление музейного мероприятия">
+          </button>
+          <div><p class="tag">Событие · печать</p><h3>Оформление мероприятия</h3><p>Единая визуальная система для бейджей, баннеров, брошюр и пространства события.</p></div>
+        </article>
+
+        <article class="project-card">
+          <button class="project-image zoomable" data-image="assets/portfolio-11.jpg">
+            <img src="assets/portfolio-11.jpg" alt="Типографика, марки, стенды и дизайн одежды">
+          </button>
+          <div><p class="tag">Типографика · мерч</p><h3>Дизайн одежды и носителей</h3><p>Типографическая система, перенесённая на стенды, листы, марки и текстиль.</p></div>
+        </article>
+      </div>
     </section>
 
-    <div id="projects" class="anchor" aria-hidden="true"></div>
-
-    <section class="portfolio-screen project-screen" aria-label="Сувенирная продукция">
-      <img src="portfolio-06.jpg" alt="Проект сувенирной продукции и термосов" loading="lazy">
+    <section class="section achievements">
+      <div class="section-heading">
+        <p class="section-number">05</p>
+        <h2>Результаты</h2>
+      </div>
+      <ul>
+        <li>Обновила визуальную систему социальных сетей музея на основе существующего гайдбука.</li>
+        <li>Реализовала проекты полного цикла — от идеи и концепции до производства и печати.</li>
+        <li>Создала серии авторских иллюстраций для культурных и коммуникационных проектов.</li>
+        <li>Разработала десятки афиш, публикаций и цифровых материалов для событий.</li>
+      </ul>
     </section>
 
-    <section class="portfolio-screen project-screen" aria-label="Румбокс и стикерпак">
-      <img src="portfolio-07.jpg" alt="Проекты румбокса и музейного стикерпака" loading="lazy">
-    </section>
-
-    <section class="portfolio-screen project-screen" aria-label="Социальные сети и афиши">
-      <img src="portfolio-08.jpg" alt="Дизайн социальных сетей и афиш" loading="lazy">
-    </section>
-
-    <section class="portfolio-screen project-screen" aria-label="Фирменный стиль">
-      <img src="portfolio-09.jpg" alt="Проекты фирменного стиля" loading="lazy">
-    </section>
-
-    <section class="portfolio-screen project-screen" aria-label="Оформление мероприятия">
-      <img src="portfolio-10.jpg" alt="Оформление музейного мероприятия" loading="lazy">
-    </section>
-
-    <section class="portfolio-screen project-screen" aria-label="Типографика и дизайн одежды">
-      <img src="portfolio-11.jpg" alt="Типографика, стенды, листы, марки и дизайн одежды" loading="lazy">
-    </section>
-
-    <section id="contacts" class="portfolio-screen" aria-label="Контакты">
-      <img src="portfolio-12.jpg" alt="Контакты Яны Пономаревой" loading="lazy">
+    <section id="contacts" class="contact">
+      <p class="eyebrow">Открыта к проектам и работе</p>
+      <h2>Давайте сделаем что-нибудь, что не хочется пролистывать.</h2>
+      <div class="contact-links">
+        <a href="mailto:ponomarevaa.y49@gmail.com">ponomarevaa.y49@gmail.com</a>
+        <a href="tel:+79962309893">+7 (996) 230-98-93</a>
+        <a href="https://t.me/yanklls" target="_blank" rel="noreferrer">Telegram: @yanklls</a>
+      </div>
     </section>
   </main>
 
-  <button class="to-top" type="button" aria-label="Вернуться наверх">↑</button>
+  <footer>
+    <span>© <span id="year"></span> Яна Пономарева</span>
+    <a href="#top">Наверх ↑</a>
+  </footer>
 
-  <dialog class="lightbox" aria-label="Увеличенный экран портфолио">
+  <dialog class="lightbox">
     <button class="lightbox-close" type="button" aria-label="Закрыть">×</button>
     <img src="" alt="">
   </dialog>
